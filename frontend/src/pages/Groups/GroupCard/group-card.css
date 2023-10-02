@@ -1,0 +1,22 @@
+.group-card__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.group-card__users {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.group-card__users div {
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+}
+.group-card__users div span {
+  margin-left: 20px;
+}/*# sourceMappingURL=group-card.css.map */

@@ -1,0 +1,13 @@
+.list-card{
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__users{
+        margin-top: 20px;
+        display: flex;
+        column-gap: 10px;
+    }
+}

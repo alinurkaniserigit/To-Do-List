@@ -1,0 +1,12 @@
+.list-card__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.list-card__users {
+  margin-top: 20px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}/*# sourceMappingURL=list-card.css.map */

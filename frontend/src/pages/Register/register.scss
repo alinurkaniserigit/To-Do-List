@@ -1,0 +1,22 @@
+.register{
+    display: flex;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.85);
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    &__action{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}

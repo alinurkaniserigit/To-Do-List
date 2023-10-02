@@ -1,0 +1,12 @@
+.lists__items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 30px;
+}
+.lists__header {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=lists.css.map */

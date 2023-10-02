@@ -1,0 +1,13 @@
+@import "./variables";
+
+%content {
+  width: 100%;
+  background: $colorWhite;
+  display: inline-block;
+}
+
+%wrapper {
+  max-width: $minDesktop;
+  padding: 0 80px;
+  margin: 0 auto;
+}

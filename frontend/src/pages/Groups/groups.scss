@@ -1,0 +1,12 @@
+.groups{
+    &__items-wrapper{
+        display: grid;
+        grid-template-columns:  1fr;
+        row-gap: 30px;
+        margin-top: 30px;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+}

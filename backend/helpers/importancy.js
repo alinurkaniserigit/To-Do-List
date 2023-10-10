@@ -3,3 +3,4 @@ module.exports = {
     Normal: 'NORMAL',
     Low: 'LOW'
   }
+  

@@ -1,10 +1,9 @@
 import React, {useState, useContext, useEffect} from 'react'
 import { TextField, Button, Typography } from '@mui/material';
-import { useMutation } from '@apollo/client';
+import { gql, useMutation, useQuery } from '@apollo/client';
 import { registerMutation} from '../../gql/mutations'
 import { UserContext } from '../../contexts';
-import { useHistory } from 'react-router-dom'
-import { toast } from 'material-react-toastify';
+import { useHistory } from 'react-router-dom';
 
 import './register.scss'
 
@@ -20,7 +19,6 @@ function Register() {
     //if mutation doesn't turn error write success message and go sign in page
     useEffect(() => {
         if(data){
-            toast.success('Verification has sent to your email!')
             //history.push(`/activate-account/${data?.register?.token}`)
             history.push("/sign-in")
         }

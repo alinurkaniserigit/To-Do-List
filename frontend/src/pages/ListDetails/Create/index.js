@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Modal, TextField, Button, Typography, Box, Select, MenuItem, FormControl, InputLabel} from '@mui/material';
 import { useMutation } from '@apollo/client';
 import { createListItemMutation } from '../../../gql/mutations'
-import { toast } from 'material-react-toastify';
+
 
 import './list-create.scss';
 

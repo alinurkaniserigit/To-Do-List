@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import ListCard from './GroupCard'
 import { useLazyQuery } from '@apollo/client';
 import { GET_GROUPS_QUERY } from '../../gql/queries';
 import GroupCreate from './Create';
 import { Button, Typography } from '@mui/material';
-
 import './groups.scss';
+import { UserContext } from '../../contexts';
+//import { User } from '../../../../backend/helpers/role';
 
 function Groups() {
     /*
@@ -15,7 +16,8 @@ function Groups() {
     const [getGroups, {data, loading, error}] = useLazyQuery(GET_GROUPS_QUERY);
     const [groups, setGroups] = useState([]); //state
     const [modalOpen, setModalOpen] = React.useState(false); //modal
-
+    const user = useContext(UserContext);
+    console.log("user",user.user.email);
     //if any change get the groups
     useEffect(() => {
         getGroups({variables: {}});

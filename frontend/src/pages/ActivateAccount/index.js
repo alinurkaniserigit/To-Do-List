@@ -4,7 +4,6 @@ import { useMutation } from '@apollo/client';
 import { confirmationMutation} from '../../gql/mutations'
 
 import { useHistory,useParams } from 'react-router-dom'
-import { toast } from 'material-react-toastify';
 
 import './activate-account.scss'
 
@@ -37,7 +36,6 @@ function ActivateAccount() {
     //if mutation doesn't turn error write success message and go sign in page
     useEffect(() => {
         if(data){
-            toast.success('Confirmation is successful!')
             history.push('/sign-in')
         }
     }, [data])
@@ -45,7 +43,6 @@ function ActivateAccount() {
     //if there is an error set user to unauthenticated
     useEffect(() => {
         if(error){
-            toast.error(`Confirmation isn't successfull!`)
         }
     }, [error])
 

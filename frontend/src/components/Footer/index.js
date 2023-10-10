@@ -5,7 +5,7 @@ const Footer = () => {
     const year = new Date().getFullYear()
     return (
         <footer className="footer-container">
-            <span>&copy; {year} - To-do'ly</span>
+            <span>&copy; {year} - To-do-list</span>
         </footer>
     );
 }

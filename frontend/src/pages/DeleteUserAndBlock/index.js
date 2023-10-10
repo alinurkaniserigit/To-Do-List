@@ -3,7 +3,7 @@ import { Button, Typography } from '@mui/material';
 import { useMutation } from '@apollo/client';
 import { removeUserMutation, addUserToBlockListMutation} from '../../gql/mutations'
 import { useHistory, useParams } from 'react-router-dom'
-import { toast } from 'material-react-toastify';
+
 
 import './register.scss'
 
@@ -18,7 +18,6 @@ function DeleteUserAndBlock() {
     useEffect(() => {
         //console.log("remove",dataRemove?.removeUser?.removeUser);
         if(dataRemove?.addUserToBlockList){
-            toast.success('Your account is successfully removed')
         }
     }, [dataRemove])
     
@@ -27,7 +26,6 @@ function DeleteUserAndBlock() {
     useEffect(() => {
         console.log("block",dataBlock?.addUserToBlockList);
         if(dataBlock?.addUserToBlockList){
-            toast.success('Your account is successfully blocked')
         }
     }, [dataBlock])
     

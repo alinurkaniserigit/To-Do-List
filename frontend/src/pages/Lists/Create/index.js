@@ -3,7 +3,7 @@ import { Modal, TextField, Button, Typography, Box, Select, MenuItem, FormContro
 import { useMutation, useQuery } from '@apollo/client';
 import { createListMutation } from '../../../gql/mutations'
 import { GET_GROUPS_QUERY, GET_GROUPS_THAT_USER_IS_ADMIN_QUERY } from '../../../gql/queries'
-import { toast } from 'material-react-toastify';
+
 
 import './list-create.scss';
 
@@ -48,7 +48,6 @@ function ListCreate(props) {
     //at each successful change on data write success message, refetch and close modal
     useEffect(() => {
         if(data){
-            toast.success(`List "${state.name}" is successfully created.`)
             refetch()
             setModalOpen(false)
         }

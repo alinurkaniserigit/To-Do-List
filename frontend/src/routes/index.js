@@ -42,6 +42,7 @@ const Routes = ({ location }) => {
                         <Route path="/activate-account/:token" component={ActivateAccount}/>
                         <Route path="/delete-account/:token" component={DeleteUserAndBlock}/>
                         <Route exact path="/404" component={NotFound}/>
+                        <Route path="groups" component={Groups}></Route>
                     </Switch>
                     
                 </AuthBase>

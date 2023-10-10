@@ -60,6 +60,7 @@ export const GET_LIST_QUERY = gql`
         getList(listId:$listId){
             id
             name
+            email
             type
             description
             group

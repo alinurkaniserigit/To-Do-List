@@ -5,10 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import { GraphQLClient } from './gql';
 import reportWebVitals from './reportWebVitals';
-import { ToastContainer, toast } from 'material-react-toastify';
-
-import 'material-react-toastify/dist/ReactToastify.css';
 import './styles/index.scss';
+import { UserContext } from './contexts';
+
 
 const GqlClient = GraphQLClient();
 
@@ -18,7 +17,6 @@ ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={ GqlClient }>
       <BrowserRouter>
-        <ToastContainer />
         <Routes />
       </BrowserRouter>
     </ApolloProvider>

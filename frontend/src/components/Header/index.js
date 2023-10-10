@@ -36,7 +36,7 @@ function Header(props) {
 
     return (
         <div className="header">
-            <div className="header__name">To-doly</div>
+            <div className="header__name">To-do-list</div>
             {!isAuthPage && <div className="header__nav">
                 {menuItems.map((item, index) => {
                     return <div key={index} className="header__nav-item"><Link style={{display: 'block'}} key={index} to={item.path}>{item.name}</Link></div>
@@ -49,3 +49,4 @@ function Header(props) {
 }
 
 export default Header
+

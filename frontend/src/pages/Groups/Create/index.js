@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Modal, TextField, Button, Typography, Box, Select, MenuItem, FormControl, InputLabel} from '@mui/material';
 import { useMutation } from '@apollo/client';
 import { createGroupMutation } from '../../../gql/mutations'
-import { toast } from 'material-react-toastify';
+
 
 import './group-create.scss';
 
@@ -37,13 +37,11 @@ function GroupCreate(props) {
     };
 
     /*
-        If data changes write toast.success message
         refetch the groups
         close the modal
     */
     useEffect(() => {
         if(data){
-            toast.success(`Group "${state.name}" is successfully created.`)
             refetch()
             setModalOpen(false)
         }
